@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/Welcome', function () {
     return view('welcome');
 });
+Route::get('/Profil', function () {
+    return view('profil');
+});
