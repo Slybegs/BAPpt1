@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+@extends('layouts.app')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <style>
         th {
             border: 1px solid;
@@ -17,8 +12,8 @@
             padding: 12px;
         }
     </style>
-</head>
-<body>
+@section('title','Profil')
+@section('content')
     <div class= "container">
         <p style= "font-size: 48px ; font-weight: bold ; text-align: start ; margin: 40px 0 0 0 ; text-decoration: underline">BIODATA</p>
         <div class= "row">
@@ -148,5 +143,5 @@
                 </td>
             </tr>
         </table>
-</body>
-</html>
+    </div>
+@endsection

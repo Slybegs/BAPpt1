@@ -1,7 +1,7 @@
-<html>
-    <head></head>
-    <body>
-        <h1>Selamat Datang, Bubi</h1>
-        <a href="Welcome">ke halaman welcome</a>
-    </body>
-</html>
+@extends('layouts.app')
+
+@section('title','Home')
+@section('content')
+    <h1>Selamat Datang, Bubi</h1>
+    <a href="Welcome">ke halaman welcome</a>   
+@endsection

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\mahasiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,6 @@ Route::get('/Welcome', function () {
 Route::get('/Profil', function () {
     return view('profil');
 });
+Route::get('/Mahasiswa', [mahasiswaController::class, 'index']);
+//     return view('mahasiswa');
+// });
