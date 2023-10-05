@@ -53,6 +53,7 @@
             <a href="/">Home</a>
             <a href="/Profil">Profil</a>
             <a href="/Mahasiswa">Mahasiswa</a>  
+            <a href="/Matakuliah">Matakuliah</a>  
         </div>
         <div class="content">
             @yield('content')

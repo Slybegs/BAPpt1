@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\mahasiswaController;
+use App\Http\Controllers\matakuliahController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,4 @@ Route::get('/Profil', function () {
 Route::get('/Mahasiswa', [mahasiswaController::class, 'index']);
 //     return view('mahasiswa');
 // });
+Route::get('/Matakuliah', [matakuliahController::class, 'index']);

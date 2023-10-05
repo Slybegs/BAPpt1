@@ -15,7 +15,7 @@ use App\Models\mahasiswa;
             padding: 12px;
         }
     </style>
-@section('title','Profil')
+@section('title','Mahasiswa')
 @section('content')
     <div class= "container">
         <p style= "font-size: 48px ; font-weight: bold ; text-align: start ; margin: 40px 0 0 0 ; text-decoration: underline">DATA MAHASISWA</p>     
