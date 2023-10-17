@@ -11,11 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('khs_details', function (Blueprint $table) {
+        Schema::create('transkrip_akademiks', function (Blueprint $table) {
             $table->id();
-            $table->char('kodeKhsDetail', 8);
-            $table->char('kodeKhs', 10);
-            $table->integer('nilai');
+            $table->char('studentID', 11);
+            $table->char('kodeMatakuliah', 8);
+            $table->char('kodeTerm', 8);
+            $table->char('nilai', 2);
+            $table->decimal('gpa', 2, 1);
+            $table->integer('sks');
             $table->timestamps();
         });
     }
@@ -25,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('khs_details');
+        Schema::dropIfExists('transkrip_akademiks');
     }
 };

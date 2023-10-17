@@ -63,6 +63,24 @@
                   <p>Matakuliah</p>
                 </a>
             </li>
+            <li class="nav-item">
+              <a href="/ProgramStudi" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>Program Studi</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/Pembayaran" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>Pembayaran</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/TranskripAkademik" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>Transkrip Akademik</p>
+              </a>
+            </li>
           </ul>
         </nav>
         <!-- /.sidebar-menu -->
