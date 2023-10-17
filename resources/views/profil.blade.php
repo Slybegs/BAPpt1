@@ -1,4 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.app2')
+@section('brd1','Profil')
+@section('brd2','Profil')
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <style>
         th {

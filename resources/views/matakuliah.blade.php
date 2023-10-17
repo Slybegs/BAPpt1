@@ -1,7 +1,9 @@
 <?php
 use App\Models\matakuliah;
 ?>
-@extends('layouts.app')
+@extends('layouts.app2')
+@section('brd1','Matakuliah')
+@section('brd2','Matakuliah')
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <style>
         th {
