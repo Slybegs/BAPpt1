@@ -35,50 +35,62 @@
                  with font-awesome or any other icon font library -->
             <li class="nav-item">
                 <a href="/" class="nav-link">
-                  <i class="nav-icon fas fa-file"></i>
+                  <i class="nav-icon fas fa-university"></i>
                   <p>Home</p>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="/Welcome" class="nav-link">
-                  <i class="nav-icon fas fa-file"></i>
+                  <i class="nav-icon fas fa-heart"></i>
                   <p>Welcome</p>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="/Profil" class="nav-link">
-                  <i class="nav-icon fas fa-file"></i>
+                  <i class="nav-icon fas fa-user"></i>
                   <p>Profil</p>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="/Mahasiswa" class="nav-link">
-                  <i class="nav-icon fas fa-regular fa-user-secret"></i>
+                  <i class="nav-icon fas fa-users"></i>
                   <p>Mahasiswa</p>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="/Matakuliah" class="nav-link">
-                  <i class="nav-icon fas fa-file"></i>
+                  <i class="nav-icon fas fa-heart"></i>
                   <p>Matakuliah</p>
                 </a>
             </li>
             <li class="nav-item">
               <a href="/ProgramStudi" class="nav-link">
-                <i class="nav-icon fas fa-file"></i>
+                <i class="nav-icon fas fa-heart"></i>
                 <p>Program Studi</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="/Pembayaran" class="nav-link">
-                <i class="nav-icon fas fa-file"></i>
+                <i class="nav-icon fas fa-wallet"></i>
                 <p>Pembayaran</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="/TranskripAkademik" class="nav-link">
-                <i class="nav-icon fas fa-file"></i>
+                <i class="nav-icon fas fa-print"></i>
                 <p>Transkrip Akademik</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/admin/Item" class="nav-link">
+                <i class="nav-icon fas fa-print"></i>
+                <p>Item</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/mahasiswa/Mahasiswa2" class="nav-link">
+                <i class="nav-icon fas fa-print"></i>
+                <p>Mahasiswa 2</p>
               </a>
             </li>
           </ul>
