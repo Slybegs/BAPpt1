@@ -6,7 +6,7 @@
 
             <div class="col-md-9">
                 <div class="card">
-                    <div class="card-header">Mahasiswa2 {{ $mahasiswa2->id }}</div>
+                    <div class="card-header">Mahasiswa 2 {{ $mahasiswa2->id }}</div>
                     <div class="card-body">
 
                         <a href="{{ url('/mahasiswa/mahasiswa2') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
@@ -26,7 +26,7 @@
                                     <tr>
                                         <th>ID</th><td>{{ $mahasiswa2->id }}</td>
                                     </tr>
-                                    <tr><th> StudentID </th><td> {{ $mahasiswa2->studentID }} </td></tr><tr><th> Nama </th><td> {{ $mahasiswa2->nama }} </td></tr><tr><th> Jurusan </th><td> {{ $mahasiswa2->jurusan }} </td></tr>
+                                    <tr><th> Student ID </th><td> {{ $mahasiswa2->studentID }} </td></tr><tr><th> Nama </th><td> {{ $mahasiswa2->nama }} </td></tr><tr><th> Jurusan </th><td> {{ $mahasiswa2->jurusan }} </td></tr>
                                 </tbody>
                             </table>
                         </div>

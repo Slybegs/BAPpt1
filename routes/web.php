@@ -8,6 +8,7 @@ use App\Http\Controllers\pembayaranController;
 use App\Http\Controllers\transkripAkademikController;
 use App\Http\Controllers\Admin\ItemController;
 use App\Http\Controllers\Mahasiswa\Mahasiswa2Controller;
+use App\Http\Controllers\Matakuliah\MatakuliahSullyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +41,8 @@ Route::get('/Pembayaran', [pembayaranController::class, 'index']);
 
 Route::get('/TranskripAkademik', [transkripAkademikController::class, 'index']);
 
-Route::resource('/admin/Item', ItemController::class);
+Route::resource('/admin/item', ItemController::class);
 
-Route::resource('/mahasiswa/Mahasiswa2', Mahasiswa2Controller::class);
+Route::resource('/mahasiswa/mahasiswa2', Mahasiswa2Controller::class);
+
+Route::resource('/matakuliah/matakuliah-sully', MatakuliahSullyController::class);

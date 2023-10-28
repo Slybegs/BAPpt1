@@ -28,3 +28,5 @@ return new class extends Migration
         Schema::dropIfExists('matakuliahs');
     }
 };
+
+//php artisan crud:generate MatakuliahSully --fields='kodeMatakuliah#string; namaMatakuliah#text; sks#integer' --view-path=matakuliah --controller-namespace=App\\Http\\Controllers\\Matakuliah --route-group=matakuliah --form-helper=html
