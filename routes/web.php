@@ -9,6 +9,7 @@ use App\Http\Controllers\transkripAkademikController;
 use App\Http\Controllers\Admin\ItemController;
 use App\Http\Controllers\Mahasiswa\Mahasiswa2Controller;
 use App\Http\Controllers\Matakuliah\MatakuliahSullyController;
+use App\Http\Controllers\laporanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,3 +47,10 @@ Route::resource('/admin/item', ItemController::class);
 Route::resource('/mahasiswa/mahasiswa2', Mahasiswa2Controller::class);
 
 Route::resource('/matakuliah/matakuliah-sully', MatakuliahSullyController::class);
+
+Route::get('/laporan', [laporanController::class,'index']);
+
+Route::get('/laporan/cetak_pdf', [laporanController::class,'cetak_pdf']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
