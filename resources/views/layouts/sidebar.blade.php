@@ -12,7 +12,12 @@
             <img src="{{ asset('AdminLTE/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <a href="#" class="d-block">Alexander Pierce</a>
+            <a href="#" class="d-block">
+              @guest
+              @else
+              {{ Auth::user()->name }}
+              @endguest
+            </a>
           </div>
         </div>
   
@@ -33,6 +38,20 @@
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Add icons to the links using the .nav-icon class
                  with font-awesome or any other icon font library -->
+            @guest
+              @if (Route::has('login'))
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                </li>
+              @endif
+
+              @if (Route::has('register'))
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                </li>
+              @endif
+
+            @else
             <li class="nav-item">
                 <a href="/" class="nav-link">
                   <i class="nav-icon fas fa-university"></i>
@@ -99,6 +118,19 @@
                 <p>Matakuliah</p>
               </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ route('logout') }}"
+              onclick="event.preventDefault();
+                  document.getElementById('logout-form').submit();">
+              <i class="nav-icon fas fa-heart"></i>
+              <p>{{ __('Logout') }}</p> 
+              </a>
+
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                  @csrf
+              </form>
+            </li>
+          @endguest
           </ul>
         </nav>
         <!-- /.sidebar-menu -->

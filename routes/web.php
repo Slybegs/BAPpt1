@@ -51,6 +51,7 @@ Route::resource('/matakuliah/matakuliah-sully', MatakuliahSullyController::class
 Route::get('/laporan', [laporanController::class,'index']);
 
 Route::get('/laporan/cetak_pdf', [laporanController::class,'cetak_pdf']);
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
